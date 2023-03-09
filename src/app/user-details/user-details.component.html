@@ -1,0 +1,27 @@
+<div class="all">
+<h2 class="title">USER DETAILS</h2>
+    <div>
+    <!-- *ngIf="row" !== "undefined" -->
+        <div class="center">
+        <p>
+            ID: {{row.id}}
+            <br>
+            Name: {{row.fullName}}
+            <br>
+            Email: {{row.email}}
+            <br>
+            Mobile Number: {{row.mobile}}
+        </p>
+        </div>
+        <div class="back">
+        
+            <a [routerLink]="['/home']" class="btn btn-dark">
+                GO BACK </a>
+       
+        </div>
+
+    </div>
+</div>
+
+
+

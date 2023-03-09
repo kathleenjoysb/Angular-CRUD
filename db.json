@@ -1,0 +1,14 @@
+{
+  "posts": [
+    {
+      "id": 5,
+      "fullName": "k",
+      "email": "k@gmail.com",
+      "mobile": "09277125478"
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
