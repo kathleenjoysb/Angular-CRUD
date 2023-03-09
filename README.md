@@ -1,6 +1,8 @@
 # AngularAssessment
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
+A simple web app that uses Create-Read-Update-Delete functions
+Still not perfect, will update soon.
 
 ## Development server
 
