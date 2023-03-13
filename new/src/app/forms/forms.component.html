@@ -1,0 +1,46 @@
+<nav class="navbar navbar-light bg-primary">
+  <div class="apptitle">
+  <h3 style="color:aliceblue">Welcome to ANGULAR CRUD!</h3>
+  </div>
+</nav>
+
+<div class="main">
+    <div class="userTitle">
+        <h4>USER DETAILS</h4>
+    </div>
+    <div class="info">
+        <form [formGroup]="formValue">
+              <div class="ml-3">
+                <label for="InputName">Full Name</label>
+                <input type="text" formControlName="fullName" class="form-control" id="InputName" aria-label="Input full name" placeholder="Enter Full Name">
+                <small *ngIf="formValue.get('fullName')?.invalid && formValue.get('fullName')?.touched"class="text-danger">Name is required.</small>
+              </div>
+            <div class="ml-3">
+              <label for="InputEmail">Email address</label>
+              <input type="email" pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-zA-Z]{2,4}" formControlName="email" class="form-control" id="InputEmail" aria-label="Input email" aria-describedby="emailHelp" placeholder="Enter email">
+              <small *ngIf="formValue.get('email')?.invalid && formValue.get('email')?.touched"class="text-danger">Invalid email.</small>
+            </div>
+            <div class="ml-3">
+              <label for="InputNumber">Mobile Number</label>
+              <input type="text" formControlName="mobile" class="form-control" id="InputNumber" aria-label="Input mobile number" placeholder="09123456789">
+              <small *ngIf="formValue.get('mobile')?.invalid && formValue.get('mobile')?.touched"class="text-danger">Invalid mobile number.</small>
+            </div>
+          </form>
+    </div>
+    <div class="buttons mt-2">
+        <button aria-label="add user" *ngIf="showAdd" (click)="postUserDetails()" [disabled]="formValue.invalid" class="btn btn-primary">Add New User</button> 
+        
+        <button aria-label="update user details" *ngIf="showUpdate" (click)="update()" [disabled]="formValue.invalid" class="btn btn-warning mx-1">Update</button>
+
+       
+    </div>
+</div>
+
+<div>
+  <app-contact-list (editData)="editItem($event)" [data]="update"></app-contact-list> 
+
+</div>
+
+
+
+

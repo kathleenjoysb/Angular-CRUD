@@ -1,0 +1,44 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "fullName": "Balbuena, Kathleen",
+      "email": "kathleen@gmail.com",
+      "mobile": "09154263757"
+    },
+    {
+      "id": 2,
+      "fullName": "Endozo, Rex Christian R.",
+      "email": "rexendozo@gmail.com",
+      "mobile": "09361529943"
+    },
+    {
+      "id": 3,
+      "fullName": "Hello, my dear",
+      "email": "mydear@yahoo.com.ph",
+      "mobile": "09154263764"
+    },
+    {
+      "id": 4,
+      "fullName": "Balbuena, Jan Bin Lyndon",
+      "email": "janbin@gmail.com",
+      "mobile": "09123456727"
+    },
+    {
+      "id": 5,
+      "fullName": "test",
+      "email": "katest@gmail.com",
+      "mobile": "09154263757"
+    },
+    {
+      "id": 6,
+      "fullName": "ter",
+      "email": "afef@gmail.com",
+      "mobile": "09673425663"
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
